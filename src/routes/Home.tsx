@@ -1,13 +1,15 @@
-import Header from '../components/Header';
+import Layout from '../components/Layout';
 
 function Home() {
   return (
-    <>
-      <Header />
+    <Layout pageMeta={{
+      title: 'Home Route',
+    }}
+    >
       <main className="max-w-6xl m-auto p-4">
         <p>Home</p>
       </main>
-    </>
+    </Layout>
   );
 }
 
