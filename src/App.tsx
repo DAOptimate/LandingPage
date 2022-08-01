@@ -1,8 +1,14 @@
+import { Routes, Route } from 'react-router-dom';
+
+import Admin from './routes/Admin';
+import Home from './routes/Home';
+
 function App() {
   return (
-    <div className="App">
-      <h1 className="bg-red-500">DAOptimate</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/admin" element={<Admin />} />
+    </Routes>
   );
 }
 
