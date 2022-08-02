@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import LoginButton from './LoginButton';
 
 function Header() {
   return (
@@ -9,6 +10,7 @@ function Header() {
           <Link to="/" className="px-4 text-neutral-600 hover:text-neutral-800">home</Link>
           <Link to="/admin" className="px-4 text-neutral-600 hover:text-neutral-800">admin</Link>
         </nav>
+        <LoginButton />
       </div>
     </header>
   );
