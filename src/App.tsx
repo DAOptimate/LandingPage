@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 
-import Admin from './routes/Admin';
-import Home from './routes/Home';
+import Admin from './modules/adminPanel';
+import Home from './modules/home';
 
 function App() {
   return (
