@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 function LoginButton() {
-  const [isMetamaskInstalled, setIsMetamaskInstalled] = useState<boolean>(false);
-  const [ethereumAccount, setEthereumAccount] = useState<string | null>(null);
+  const [isMetamaskInstalled, setIsMetamaskInstalled] = useState(false);
+  const [ethereumAccount, setEthereumAccount] = useState<string>('');
 
   useEffect(() => {
     if ((window as any).ethereum) {
@@ -20,7 +20,7 @@ function LoginButton() {
       });
   }
 
-  if (ethereumAccount === null) {
+  if (!ethereumAccount) {
     return (
       <div>
         {
