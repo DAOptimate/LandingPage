@@ -39,7 +39,7 @@ function LoginButton() {
 
   return (
     <div>
-      <p className="bg-transparent text-pink-600 font-bold py-1 px-4 border border-pink-600">
+      <p className="login-button-style">
         ETH wallet connected as:
         {' '}
         {ethereumAccount}
