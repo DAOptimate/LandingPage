@@ -1,9 +1,9 @@
-import React from 'react';
+import { ReactNode } from 'react';
 import { Helmet } from 'react-helmet';
-import Header from './Header';
+import Header from '../organism/Header';
 
 interface IProps {
-    children: React.ReactNode,
+    children: ReactNode,
     pageMeta: {
         title: string
     }
