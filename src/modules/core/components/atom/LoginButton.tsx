@@ -24,15 +24,14 @@ function LoginButton() {
     return (
       <div>
         {
-                    isMetamaskInstalled ? (
-                      <div>
-                        <button type="button" onClick={connectMetamaskWallet} className="login-button-style">Log In</button>
-                      </div>
-                    ) : (
-                      <p>Install Your Metamask wallet</p>
-                    )
-                }
-
+          isMetamaskInstalled ? (
+            <div>
+              <button type="button" onClick={connectMetamaskWallet} className="login-button-style">Log In</button>
+            </div>
+          ) : (
+            <p>Install Your Metamask wallet</p>
+          )
+        }
       </div>
     );
   }
