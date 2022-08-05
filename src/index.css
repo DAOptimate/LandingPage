@@ -3,7 +3,4 @@
 @tailwind utilities;
 
 @layer components {
-  .button-styles {
-    @apply px-4 text-neutral-600 hover:text-red-800
-  }
 }

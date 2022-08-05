@@ -7,7 +7,7 @@ interface IProps {
 // TODO: Check if the link is active and change color
 function LinkButton({ to, children }: IProps) {
   return (
-    <Link to={to} className="button-styles">{children}</Link>
+    <Link to={to} className="btn btn-link">{children}</Link>
   );
 }
 
