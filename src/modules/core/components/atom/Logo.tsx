@@ -1,6 +1,10 @@
+import logoImg from '../../../../assets/daoptimate_logo.png';
+
 function Logo() {
   return (
-    <h1 className="text-neutral-600 font-bold text-2xl">DAOptimate</h1>
+    <div className="flex justify-center">
+      <img src={logoImg} alt="daoptimate logo" className="w-10" />
+    </div>
   );
 }
 
