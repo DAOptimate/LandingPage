@@ -1,9 +1,10 @@
+import Logo from '../atom/Logo';
 import NavBar from '../molecule/NavBar';
 
 function Sidebar() {
   return (
-    <nav className="bg-white">
-      <span>logo</span>
+    <nav className="p-4 bg-white">
+      <Logo />
       <NavBar />
     </nav>
   );
