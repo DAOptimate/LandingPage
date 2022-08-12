@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom';
 
 interface IProps {
   to: string,
-  children: string
 }
-// TODO: Check if the link is active and change color
-function LinkButton({ to, children }: IProps) {
+function LinkButton({ to }: IProps) {
   return (
-    <Link to={to} className="button-styles">{children}</Link>
+    <Link to={to} className="w-full">
+      <div className="bg-light-grey w-10 h-10 border border-1 border-dark-grey" />
+    </Link>
   );
 }
 
