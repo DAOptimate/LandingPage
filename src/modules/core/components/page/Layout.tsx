@@ -18,7 +18,7 @@ function Layout({ children, pageMeta: { title } }: IProps) {
         <title>{title}</title>
       </Helmet>
       <Navigation />
-      <main className="grow">
+      <main className="grow p-4">
         <Header />
         {children}
       </main>
