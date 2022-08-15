@@ -5,7 +5,7 @@ interface IProps {
 }
 function HeaderContainer({ children }: IProps) {
   return (
-    <header className="bg-transparant">
+    <header>
       <div className="p-4 flex justify-between items-center">
         {children}
       </div>
