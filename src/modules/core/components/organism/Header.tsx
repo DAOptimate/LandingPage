@@ -1,13 +1,11 @@
 import HeaderContainer from '../atom/HeaderContainer';
-import Logo from '../atom/Logo';
-import NavBar from '../molecule/NavBar';
+import SiteTitle from '../atom/SiteTitle';
 import LoginButton from '../atom/LoginButton';
 
 function Header() {
   return (
     <HeaderContainer>
-      <Logo />
-      <NavBar />
+      <SiteTitle />
       <LoginButton />
     </HeaderContainer>
   );

@@ -1,11 +1,12 @@
 import LinkButton from '../atom/LinkButton';
+import NavBarContainer from '../atom/NavBarContainer';
 
 function NavBar() {
   return (
-    <nav>
-      <LinkButton to="/">home</LinkButton>
-      <LinkButton to="/admin">admin</LinkButton>
-    </nav>
+    <NavBarContainer>
+      <LinkButton to="/" />
+      <LinkButton to="/admin" />
+    </NavBarContainer>
   );
 }
 

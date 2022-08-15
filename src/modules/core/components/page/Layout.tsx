@@ -1,23 +1,29 @@
 import { ReactNode } from 'react';
 import { Helmet } from 'react-helmet';
+import LayoutContainer from '../atom/LayoutContainer';
 import Header from '../organism/Header';
+import Navigation from '../organism/Sidebar';
 
 interface IProps {
-    children: ReactNode,
-    pageMeta: {
-        title: string
-    }
+  children: ReactNode;
+  pageMeta: {
+    title: string;
+  };
 }
 
 function Layout({ children, pageMeta: { title } }: IProps) {
   return (
-    <>
+    <LayoutContainer>
       <Helmet>
         <title>{title}</title>
       </Helmet>
-      <Header />
-      {children}
-    </>
+      <Navigation />
+      <main className="grow p-4">
+        <Header />
+        {children}
+      </main>
+    </LayoutContainer>
+
   );
 }
 

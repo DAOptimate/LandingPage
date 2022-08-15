@@ -1,4 +1,5 @@
 import Layout from '../core/components/page/Layout';
+import Hero from './components/organisms/Hero';
 
 function Home() {
   return (
@@ -6,9 +7,7 @@ function Home() {
       title: 'Home Route',
     }}
     >
-      <main className="max-w-6xl m-auto p-4">
-        <p>Home</p>
-      </main>
+      <Hero />
     </Layout>
   );
 }
